@@ -1,0 +1,197 @@
+.{
+    margin:0;
+    padding:0;
+    box-sizing:0;
+}
+body{
+    background: #f5c842;
+}
+.start_button{
+    left:45%;
+    top:50%;
+    position:absolute;
+    
+}
+button{
+    height:40px;
+    width:200px;
+    border-radius:10%;
+    text-align:center;
+    font-family:"Poppins";
+    font-size: 2rem;
+    font-weight:500;
+    
+}
+button a{
+    font:200;
+    color:black;
+    text-decoration:none;
+}
+
+.Container{
+    display:grid;
+    place-items:center;
+    background:white;
+    width:500px;
+    height:600px;
+    margin-left:31.67%;
+    border-radius: 5%;
+    position:absolute;
+    
+}
+.container_modes{
+    place-items:center;
+    
+    width:500px;
+    height:600px;
+    margin-left:31.67%;
+    border-radius: 5%;
+    
+    
+}
+
+.container1 {
+    
+    height:300px;
+    width:500px;
+    margin-top:100px;
+    display:inline;
+    position:fixed;
+    
+}
+.container2{
+    
+    display:none;
+    height:300px;
+    width:500px;
+    margin-top:100px;
+    position:fixed;
+    place-items:center;
+
+
+}
+.container2 button{
+    margin-left:150px;
+    margin-top:50px;
+}
+.container1 button{
+    margin-left:150px;
+    margin-top:150px;
+ }
+.stats{
+    display:flex;
+    
+    
+    
+}
+.stats2{
+    display:block;
+    margin-left:55px;
+    font-size: 1rem;
+    font-weight:500;
+}
+
+.moves{
+    display:flex;
+    background:blue;
+    
+}
+#move{
+    background:pink;
+    margin-top:0px;
+}
+
+.heading{
+    text-align:center;
+    font-family:"Poppins";
+    font-size: 2rem;
+    font-weight:500;
+    
+    margin-left:80px;
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(4,0fr);
+    column-gap: .5em;
+    row-gap:.5em;
+    
+   
+  
+    
+}
+
+.card{
+   height:110px;
+   width:90px;
+   background:#42f5bf;
+   border-radius:10px;
+   
+   cursor:pointer;
+   transition:0.3s all ease;
+  
+}
+.cards img{
+    height:110px;
+   width:90px;
+   opacity:0;
+   
+}
+
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card.clicked{
+background:orange;
+
+}
+.card.clicked img, .card.checked img{
+    opacity:1;
+}
+
+.card.checked{
+    background:lightgreen;
+}
+
+.card.shake{
+    background-color:red;
+    animation:shake 0.5s;
+    
+}
+@keyframes shake{
+ 0%{
+    transform: translate(1px,1px) rotate(0deg);
+ }
+ 10%{
+    transform: translate(-1px,-2px) rotate(-1deg);
+ }
+ 20%{
+    transform: translate(-3px,0px) rotate(1deg);
+ }
+ 30%{
+    transform: translate(3px,2px) rotate(0deg);
+ }
+ 40%{
+    transform: translate(-1px,-1px) rotate(1deg);
+ }
+ 50%{
+    transform: translate(-1px,2px) rotate(-1deg);
+ }
+ 60%{
+    transform: translate(-3px,1px) rotate(-1deg);
+ }
+ 70%{
+    transform: translate(3px,1px) rotate(-1deg);
+ }
+ 80%{
+    transform: translate(-1px,-1px) rotate(1deg);
+ }
+ 90%{
+    transform: translate(1px,2px) rotate(0deg);
+ }
+ 100%{
+    transform: translate(1px,-2px) rotate(-1deg);
+ }
+
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class= container_modes>
+    
+    
+    <div  class="container1">
+       <button id="start" onclick="go_to_moves()">Start Game</button>
+
+    </div>
+    <div class="container2">
+        <div id="easy"><button><a href="/index.html">Easy</a></button></div>
+        <div id="medium"><button Onclick="go_to_moves" >Medium</button></div>
+        <div id="hard"><button onclick="go_to_moves">Hard</button></div>
+
+    </div>
+  
+ 
+</div>
+<script>
+     function go_to_moves(){
+        document.getElementsByClassName("container1")[0].style.display="none";
+        console.log(":-0");
+        document.getElementsByClassName("container2")[0].style.display="inline";
+        console.log(":-)");
+     };
+</script>
+
+
+
+</body>
